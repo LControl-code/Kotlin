@@ -1,4 +1,4 @@
-fun convertMorseCodeToText(inMorseCode : String) :String {
+fun convertMorseCodeToText(inMorseCode: String): String {
     val morseCodeMap = mapOf(
         "•–" to "A",
         "–•••" to "B",
@@ -46,7 +46,7 @@ fun convertMorseCodeToText(inMorseCode : String) :String {
     return outputText
 }
 
-fun main(){
+fun main() {
     val inputMorseCode = readlnOrNull() ?: return
     val outputText = convertMorseCodeToText(inputMorseCode)
     println(outputText)

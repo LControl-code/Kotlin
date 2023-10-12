@@ -14,7 +14,7 @@ fun main() {
     val countILPlates = nPlates.count { it.startsWith("IL") }
 
     val percentage = if (nPlates.isNotEmpty()) {
-        String.format("%.2f" ,countILPlates.toDouble() / nPlates.size * 100)
+        String.format("%.2f", countILPlates.toDouble() / nPlates.size * 100)
     } else {
         "0.00"
     }
